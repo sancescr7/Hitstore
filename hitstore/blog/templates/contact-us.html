@@ -1,0 +1,355 @@
+
+       {% extends 'base.html' %}
+       {% load static %}
+       {% block title %}
+       <title>Hitstore - Contacts</title>
+
+       {% endblock %}
+
+       {% block content%}
+
+      
+       <!-- end header_area
+		============================================ -->
+        <!-- start main_shop_area
+		============================================ -->
+
+        <section class="main_contact_area">
+            <div class="breadcrumbs">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="container-inner">
+                                <ul>
+                                    <li class="home">
+                                        <a href="{% url 'index' %}">Home</a>
+                                        <span>
+                                            <i class="fa fa-angle-right"></i>
+                                        </span>
+                                    </li>
+                                    <li class="category3">
+                                        <strong>contact </strong>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-content-area">
+                        <h2>Customer service -<strong> Contact us</strong></h2>
+                        <div class="contact-baner">
+                            <div class="contact-text">
+                                <h2>Contact info</h2>
+                                <p>get in touch</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-map">
+                        <h3>We are located</h3>
+                        <div id="hastech">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2224905.8379164026!2d-63.27089988050263!3d-2.8569688249815943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91e8605342744385%3A0x3d3c6dc1394a7fc7!2sAmazon%20Rainforest!5e0!3m2!1sen!2sbd!4v1635401091721!5m2!1sen!2sbd" style="border:0;width:100%;height:100%;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                    <div class="contact-from-atea">
+                        <div class="form-and-info">
+                            <div class="row">
+                                <div class="col-md-5 col-lg-4">
+                                    <div class="contactDetails contactHead">
+                                        <h3>CONTACT Info</h3>
+                                        <p>
+                                            <span class="iconContact">
+                                                <i class="fa fa-map-marker"></i>
+                                            </span>
+                                            8901 Binghamton Road, Glasgow
+                                            <br>
+                                            D04 89 GR, New York.
+                                        </p>
+                                        <p>
+                                            <span class="iconContact">
+                                                <i class="fa fa-phone"></i>
+                                            </span>
+                                            Telephone: (801) 2345 - 6789
+                                            <br>
+                                            Fax: (801) 2345 - 6789
+                                        </p>
+                                        <p>
+                                            <span class="iconContact">
+                                                <i class="fa fa-envelope-o"></i>
+                                            </span>
+                                            Email: admin@Bootexperts.com
+                                            <br>
+                                            Website: www.hitstorethemes.com
+                                        </p>
+                                    </div>
+                                    <div class="social-area contactHead">
+                                        <h3>Flowe us</h3>
+                                        <ul class="socila-icon">
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fa fa-facebook"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fa fa-twitter"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fa fa-rss"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fa fa-google-plus"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-7 col-lg-8">
+                                    <div class="contactfrom">
+                                        <h1>message</h1>
+                                        <form action="" method="post">
+                                            {% csrf_token  %}
+                                            {{ form.as_p }}
+                                            <button class="btn btn-primary" type="submit">submit</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="shop_area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="title ma-title lab">
+                            <h2>
+                                Our brands
+                            </h2>
+                        </div>
+                    </div>
+                </div>       
+                <div class="item_all indicator-style owl-carousel">
+                    <img class="primary-img" src="{% static 'img/item/br1.jpg'%}" alt="" />
+                    <img class="primary-img" src="{% static 'img/item/br1.jpg'%}" alt="" />
+                    <img class="primary-img" src="{% static 'img/item/br1.jpg'%}" alt="" />
+                    <img class="primary-img" src="{% static 'img/item/br1.jpg'%}" alt="" />
+                    <img class="primary-img" src="{% static 'img/item/br1.jpg'%}" alt="" />
+                    <img class="primary-img" src="{% static 'img/item/br1.jpg'%}" alt="" />
+                    <img class="primary-img" src="{% static 'img/item/br1.jpg'%}" alt="" />
+                    <img class="primary-img" src="{% static 'img/item/br1.jpg'%}" alt="" />
+                    <img class="primary-img" src="{% static 'img/item/br1.jpg'%}" alt="" />
+                </div>
+            </div>
+        </div>
+		<!-- end shop_area
+		============================================ -->
+        <!-- start tweets_area
+		============================================ -->
+        <section class="tweets_area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="tweet-content">
+                            <div class="tweet-title ma-title">
+                                <h2>Latest Tweets</h2>
+                            </div>
+                            <div class="twitter-article">
+                                <div class="twitter-pic">
+                                    <a href="#"><img src="{% static 'img/tweet/sMv5yar__normal.png'%}" alt="" /></a>
+                                </div>
+                                <div class="twitter-text">
+                                    <span class="tweetprofilelink">
+                                        <strong>
+                                        <a href="#">Magento themes Club</a>
+                                        </strong>
+                                        <a href="#">@plazathemes</a>
+                                    </span>
+                                    <br>
+                                        Check Out "Optician - Responsive #OpenCart #Digital #Theme" on #envatomarket by
+                                        <a href="#">@posthemes</a>
+                                        #themeforest
+                                        <a href="#">https://t.co/NGqqa3v0tf</a>
+                                    <br>
+                                    <span class="tweet-time">
+                                        <a href="#">11h</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="social-footer">
+                            <div class="ma-title">
+                                <h2>Stay Connected</h2>
+                            </div>
+                            <div class="footer-static-content">
+                                <ul class="link-follow">
+                                    <li class="first">
+                                        <a class="twitter fa fa-twitter" href="#"></a>
+                                    </li>
+                                    <li class="first">
+                                        <a class="google fa fa-google-plus" href="#"></a>
+                                    </li>
+                                    <li class="first">
+                                        <a class="facebook fa fa-facebook" href="#"></a>
+                                    </li>
+                                    <li class="first">
+                                        <a class="linkedin fa fa-linkedin" href="#"></a>
+                                    </li>
+                                    <li class="first">
+                                        <a class="youtube fa fa-youtube" href="#"></a>
+                                    </li>
+                                    <li class="first">
+                                        <a class="rss fa fa-rss" href="#"></a>
+                                    </li>
+                                    <li class="first">
+                                        <a class="vimeo-square fa fa-vimeo-square" href="#"></a>
+                                    </li>
+                                    <li class="first">
+                                        <a class="instagram fa fa-instagram" href="#"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end tweets_area
+		============================================ -->
+        <!-- start ma-footer-stati
+		============================================ -->
+        <div class="ma-footer-static">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="container-inner">
+                            <nav>
+                                <ul class="pt-menu-links">
+                                    <li class="first home">
+                                        <a href="#">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">about us</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Contacts</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Blog</a>
+                                    </li>
+                                    <li class="last">
+                                        <a href="#">View All Themes</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="footer-static-top">
+                                <div class="row">
+                                    <div class="f-col f-col1 relative col-lg-3 col-md-3 col-sm-6 col-12">
+                                        <div class="static_all">
+                                            <div class="footer-static-title">
+                                                <h3>My Account</h3>
+                                            </div>
+                                            <div class="footer-static-content">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#">My Account</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Login</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">My Cart</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Wishlist</a>
+                                                    </li>
+                                                    <li class="last">
+                                                        <a href="#">Checkout</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="f-col f-col2 relative col-lg-3 col-md-3 col-sm-6 col-12">
+                                        <div class="static_all">
+                                            <div class="footer-static-title">
+                                                <h3>Information</h3>
+                                            </div>
+                                            <div class="footer-static-content">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#">Sitemap</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Privacy Policy</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Advanced Search</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Privacy Policy</a>
+                                                    </li>
+                                                    <li class="last">
+                                                        <a href="#">Contact Us</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="f-col f-col3 relative col-lg-3 col-md-3 col-sm-6 col-12">
+                                        <div class="static_all">
+                                            <div class="footer-static-title">
+                                                <h3>Customer Service</h3>
+                                            </div>
+                                            <div class="footer-static-content">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#">Product Recall</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Gift Vouchers</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Returns and Exchanges</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Shipping Options</a>
+                                                    </li>
+                                                    <li class="last">
+                                                        <a href="#">Gift Vouchers</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="f-col f-col4 relative col-lg-3 col-md-3 col-sm-6 col-12">
+                                        <div class="footer-static-title">
+                                            <h3>Store information</h3>
+                                        </div>
+                                        <div class="footer-static-content">
+                                            <div class="footer-contact">
+                                                <p class="adress">My Company</p>
+                                                <p class="phone">42 avenue des Champs Elysées 75000 Paris France</p>
+                                                <p class="fax">Call us now: (+1)866-540-3229</p>
+                                                <p class="email">Email: admin@Bootexperts.com</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end ma-footer-stati
+		============================================ -->
+        <!-- end footer-address
+		============================================ -->
+        {% endblock %}

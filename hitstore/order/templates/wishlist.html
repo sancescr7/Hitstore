@@ -1,0 +1,306 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+<title>Hitstore - wishlist</title>
+
+{% endblock %}
+
+{% block content%}
+
+        <!-- end header_area
+		============================================ -->
+        <!-- start shopping-cart-area
+		============================================ -->
+        <div class="shopping-cart-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-12">
+                        <div class="s-cart-all">
+                            <div class="page-title">
+                                <h1>wishlist</h1>
+                            </div>
+                            <div class="cart-form table-responsive">
+                                <table id="shopping-cart-table" class="data-table cart-table">
+                                    <tr>
+                                        <th>Remove</th>
+                                        <th>Images</th>
+                                        <th>Product Name</th>
+                                        <th>Edit</th>
+                                        <th>Unit Price</th>
+                                        <th>Qty</th>
+                                        <th>Add to cart</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="sop-icon">
+                                            <a href="#"><i class="fa fa-times"></i></a>
+                                        </td>
+                                        <td class="sop-cart">
+                                            <a href="#"><img class="primary-image" alt="" src="{% static 'img/product/01_1.jpg'%}"></a>
+                                        </td>
+                                        <td class="sop-cart"><a href="#">Cras neque metus</a></td>
+                                        <td class="sop"><a href="#">Edit</a></td>
+                                        <td class="sop-cart">$155.00</td>
+                                        <td><input class="input-text qty" type="text" name="qty" maxlength="12" value="1" title="Qty"></td>
+                                        <td><button class="button2  notice elit" title="" type="button">
+                                                <span>Add to cart</span>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="sop-icon">
+                                            <a href="#"><i class="fa fa-times"></i></a>
+                                        </td>
+                                        <td class="sop-cart">
+                                            <a href="#"><img class="primary-image" alt="" src="{% static 'img/product/01_1.jpg'%}"></a>
+                                        </td>
+                                        <td class="sop-cart"><a href="#">Accumsan elit </a></td>
+                                        <td class="sop"><a href="#">Edit</a></td>
+                                        <td class="sop-cart">$100.00</td>
+                                        <td><input class="input-text qty" type="text" name="qty" maxlength="12" value="1" title="Qty"></td>
+                                        <td><button class="button2  notice elit" title="" type="button">
+                                                <span>Add to cart</span>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end shopping-cart-area
+		============================================ -->
+        <!-- start shop_area
+		============================================ -->
+        <section class="shop_area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="title ma-title lab">
+                            <h2>
+                                Our brands
+                            </h2>
+                        </div>
+                    </div>
+                </div>       
+                <div class="item_all indicator-style item-down owl-carousel">
+                    <img class="primary-img" src="{% static 'img/item/br1.jpg'%}" alt="" />
+                    <img class="primary-img" src="{% static 'img/item/br1.jpg'%}" alt="" />
+                    <img class="primary-img" src="{% static 'img/item/br1.jpg'%}" alt="" />
+                    <img class="primary-img" src="{% static 'img/item/br1.jpg'%}" alt="" />
+                    <img class="primary-img" src="{% static 'img/item/br1.jpg'%}" alt="" />
+                    <img class="primary-img" src="{% static 'img/item/br1.jpg'%}" alt="" />
+                    <img class="primary-img" src="{% static 'img/item/br1.jpg'%}" alt="" />
+                    <img class="primary-img" src="{% static 'img/item/br1.jpg'%}" alt="" />
+                    <img class="primary-img" src="{% static 'img/item/br1.jpg'%}" alt="" />
+                </div>
+            </div>
+        </section>
+		<!-- end shop_area
+		============================================ -->
+        <!-- start tweets_area
+		============================================ -->
+        <section class="tweets_area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="tweet-content">
+                            <div class="tweet-title ma-title">
+                                <h2>Latest Tweets</h2>
+                            </div>
+                            <div class="twitter-article">
+                                <div class="twitter-pic">
+                                    <a href="#"><img src="{% static 'img/tweet/sMv5yar__normal.png'%}" alt="" /></a>
+                                </div>
+                                <div class="twitter-text">
+                                    <span class="tweetprofilelink">
+                                        <strong>
+                                        <a href="#">Magento themes Club</a>
+                                        </strong>
+                                        <a href="#">@plazathemes</a>
+                                    </span>
+                                    <br>
+                                        Check Out "Optician - Responsive #OpenCart #Digital #Theme" on #envatomarket by
+                                        <a href="#">@posthemes</a>
+                                        #themeforest
+                                        <a href="#">https://t.co/NGqqa3v0tf</a>
+                                    <br>
+                                    <span class="tweet-time">
+                                        <a href="#">11h</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="social-footer">
+                            <div class="ma-title">
+                                <h2>Stay Connected</h2>
+                            </div>
+                            <div class="footer-static-content">
+                                <ul class="link-follow">
+                                    <li class="first">
+                                        <a class="twitter fa fa-twitter" href="#"></a>
+                                    </li>
+                                    <li class="first">
+                                        <a class="google fa fa-google-plus" href="#"></a>
+                                    </li>
+                                    <li class="first">
+                                        <a class="facebook fa fa-facebook" href="#"></a>
+                                    </li>
+                                    <li class="first">
+                                        <a class="linkedin fa fa-linkedin" href="#"></a>
+                                    </li>
+                                    <li class="first">
+                                        <a class="youtube fa fa-youtube" href="#"></a>
+                                    </li>
+                                    <li class="first">
+                                        <a class="rss fa fa-rss" href="#"></a>
+                                    </li>
+                                    <li class="first">
+                                        <a class="vimeo-square fa fa-vimeo-square" href="#"></a>
+                                    </li>
+                                    <li class="first">
+                                        <a class="instagram fa fa-instagram" href="#"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end tweets_area
+		============================================ -->
+        <!-- start ma-footer-stati
+		============================================ -->
+        <div class="ma-footer-static">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="container-inner">
+                            <nav>
+                                <ul class="pt-menu-links">
+                                    <li class="first home">
+                                        <a href="#">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">about us</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Contacts</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Blog</a>
+                                    </li>
+                                    <li class="last">
+                                        <a href="#">View All Themes</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="footer-static-top">
+                                <div class="row">
+                                    <div class="f-col f-col1 relative col-lg-3 col-md-3 col-sm-6 col-12">
+                                        <div class="static_all">
+                                            <div class="footer-static-title">
+                                                <h3>My Account</h3>
+                                            </div>
+                                            <div class="footer-static-content">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#">My Account</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Login</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">My Cart</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Wishlist</a>
+                                                    </li>
+                                                    <li class="last">
+                                                        <a href="#">Checkout</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="f-col f-col2 relative col-lg-3 col-md-3 col-sm-6 col-12">
+                                        <div class="static_all">
+                                            <div class="footer-static-title">
+                                                <h3>Information</h3>
+                                            </div>
+                                            <div class="footer-static-content">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#">Sitemap</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Privacy Policy</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Advanced Search</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Privacy Policy</a>
+                                                    </li>
+                                                    <li class="last">
+                                                        <a href="#">Contact Us</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="f-col f-col3 relative col-lg-3 col-md-3 col-sm-6 col-12">
+                                        <div class="static_all">
+                                            <div class="footer-static-title">
+                                                <h3>Customer Service</h3>
+                                            </div>
+                                            <div class="footer-static-content">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#">Product Recall</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Gift Vouchers</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Returns and Exchanges</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Shipping Options</a>
+                                                    </li>
+                                                    <li class="last">
+                                                        <a href="#">Gift Vouchers</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="f-col f-col4 relative col-lg-3 col-md-3 col-sm-6 col-12">
+                                        <div class="footer-static-title">
+                                            <h3>Store information</h3>
+                                        </div>
+                                        <div class="footer-static-content">
+                                            <div class="footer-contact">
+                                                <p class="adress">My Company</p>
+                                                <p class="phone">42 avenue des Champs Elysées 75000 Paris France</p>
+                                                <p class="fax">Call us now: (+1)866-540-3229</p>
+                                                <p class="email">Email: admin@Bootexperts.com</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end ma-footer-stati
+		============================================ -->
+        <!-- end footer-address
+		============================================ -->
+      {% endblock %}
